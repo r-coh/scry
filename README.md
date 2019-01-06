@@ -2,6 +2,22 @@
 
 **TODO: Add description**
 
+## Building from this repository
+
+For Scry to work on your machine ensure you have `erlang` and `elixir` installed.
+Build app by running:
+  ```
+  mix deps.get
+  mix escript.build  
+  ```
+these commands will generate an executable `scry` on the root folder, that serves
+as our app. You can run commands on your terminal in the following format.
+  ``` 
+  ./scry --help
+  ```
+  
+
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
