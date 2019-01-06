@@ -63,8 +63,14 @@ defmodule Scry.CLI do
   def process(:help) do
     IO.puts """
     SCRY
-    ------
-    #todo
+    -------------------------------------------
+    Run the following commands
+      ./scry --btc rate
+    to get bitcoin rate at the moment in USD.
+      ./scry --btc time
+    to get the time at given rate.
+    -------------------------------------------
+
     """
   end
 
