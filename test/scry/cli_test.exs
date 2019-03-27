@@ -4,7 +4,6 @@ defmodule Scry.CLITest do
   for the various commands parsed to Scry app.
   """
   use ExUnit.Case
-  import ExUnit.CaptureIO
 
   alias Scry.CLI
   @test_data ["--help"]
@@ -14,7 +13,6 @@ defmodule Scry.CLITest do
   test "command '--help' outputs the usge info" do
     assert CLI.parse_params(@test_data) == :help
     assert CLI.process(:help)== :ok
-    #assert capture_io(CLI.process(:help)) == "SCRY\n------\n#todo\n\n"
   end
 
   test "command '--btc time' outputs time of recorded btc price" do
